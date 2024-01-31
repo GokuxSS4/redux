@@ -3,5 +3,5 @@ import { useSelector } from "react-redux"
 
 export default function TodoList() {
   const todos = useSelector((state)=>state.todos);
-  return (todos && todos.map(todo => <Todo key={todo.id} title={todo.title}/>));
+  return (todos && todos.map(todo => <Todo key={todo.id} id={todo.id} title={todo.title}/>));
 }
