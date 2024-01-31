@@ -1,6 +1,6 @@
 import {ADD_TODO,REMOVE_TODO,EDIT_TODO} from '../constants/index'
 
-export function todoReducer(todos=[],action){
+export default function todoReducer(todos=[],action){
     if(action.type == ADD_TODO){
         return [...todos,{id:action.payload.id,title:action.payload.title}];
     }
